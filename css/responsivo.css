@@ -1,0 +1,28 @@
+@media screen and (max-width: 950px) {
+
+body {
+    height: auto;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.img__supermario {
+    width: 100%;
+}
+
+.card__login {
+    height: 500px;
+    width: 330px;
+}
+
+.login__img {
+    width: 180px;
+}
+
+.login__tittle {
+    font-size: 20px;
+}
+
+
+
+}

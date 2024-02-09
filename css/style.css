@@ -1,0 +1,94 @@
+/*importando font*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/*RESET CSS*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P';
+    
+    color: var(--color-font);
+}
+/*VARIÁVEIS*/
+:root {
+    --color-font: #ffff;
+    --background-card: linear-gradient(135deg, rgba(255, 255, 255, 35%), rgba(255, 255, 255, 0%));
+    --background-gradiente: linear-gradient(to bottom , #E20606, #B62727,#871515, #5F0B0B);
+    --background-botao:#0000FA;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-gradiente);
+    gap: 90px;
+}
+
+.img__supermario {
+    width: 450px;
+}
+
+.card__login {
+    height: 500px;
+    width: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*GLASS Effect*/
+.card__login {
+    background: var(--background-card);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+.login__img {
+    width: 200px;
+}
+
+.login__tittle{
+    font-size: 22px;  
+}
+
+.login__area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+     
+.login__input{
+
+    height: 50px;
+    width: 300px;
+    border-radius: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 20px 45px 20px 20px;
+}
+
+.nome { 
+  border: 1px solid #fff;
+}
+
+.nome::placeholder {
+    color: #fff;
+}
+
+.jogar {
+    background: var(--background-botao);
+    cursor: pointer;
+}
+
+
